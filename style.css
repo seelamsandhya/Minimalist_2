@@ -1,0 +1,54 @@
+.bg-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/towerbg.png");
+    
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+
+
+}
+
+.card-container {
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    margin: 24px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+
+.card-heading {
+    color: #0f0e46;
+    font-family: "Roboto";
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.card-description {
+    color: #6c6b70;
+    font-family: "Roboto";
+    font-size: 13px;
+}
+
+.card-image {
+    margin-left: -230px;
+   
+}
+.card-image-1{
+    padding-top: 8px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.red-button{
+    color: aliceblue;
+    background-color: red;
+}
