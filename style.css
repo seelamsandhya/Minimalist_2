@@ -1,54 +1,82 @@
-.bg-container {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/towerbg.png");
-    
-    background-size: cover;
-    background-position: center;
-    filter: blur(10px);
-    z-index: -1;
-
-
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.card-container {
-    text-align: center;
+.product-card {
+    display: flex;
     background-color: white;
-    border-radius: 15px;
-    margin: 24px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
 }
 
-.card-heading {
-    color: #0f0e46;
-    font-family: "Roboto";
-    font-size: 23px;
-    font-weight: bold;
+.card-image img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
 }
 
-.card-description {
-    color: #6c6b70;
-    font-family: "Roboto";
-    font-size: 13px;
-}
-
-.card-image {
-    margin-left: -230px;
-   
-}
-.card-image-1{
-    padding-top: 8px;
-    border-radius: 8px;
+.card-thumbnails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
     padding: 10px;
-    margin: 10px;
-    width: 500px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
-.red-button{
-    color: aliceblue;
+
+.card-thumbnails img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-details {
+    padding: 20px;
+    max-width: 400px;
+    overflow-y: auto;
+}
+
+.card-details h2 {
+    margin-top: 0;
+}
+
+.card-details ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.choose-now {
+    display: inline-block;
+    padding: 10px 20px;
     background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
+
+.choose-now:hover {
+    background-color: darkred;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
